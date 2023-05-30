@@ -8,10 +8,10 @@ class MainClass369Test {
 
     @Test
     void game369() {
-        assertEquals("*", MainClass369.is369(3));
-        assertEquals("", MainClass369.is369(15));
-        assertEquals("**", MainClass369.is369(33));
-        assertEquals("***", MainClass369.is369(333));
-        assertEquals("****", MainClass369.is369(3369));
+        assertEquals("*", MyUtils.is369(3));
+        assertEquals("", MyUtils.is369(15));
+        assertEquals("**", MyUtils.is369(33));
+        assertEquals("***", MyUtils.is369(333));
+        assertEquals("****", MyUtils.is369(3369));
     }
 }
