@@ -20,13 +20,20 @@ public class Number {
         }
         if (result == num) return true;
         return false;
+//        List<Integer> numbers = factors(num);
+//        int sum = numbers.stream().mapToInt(Integer::intValue).sum();
+//        return (sum == num);
     }
 
-    public static String factors(int num) {
-        List factor = new ArrayList<Integer>();
+    private static List<Integer> factors(int num) {
+        List<Integer> factor = new ArrayList<>();
         for (int i = 1; i < num; i++) {
             if (num % i == 0) factor.add(i);
         }
-        return factor.toString();
+        return factor;
+    }
+
+    public static String factorsresult(int num) {
+        return factors(num).toString();
     }
 }

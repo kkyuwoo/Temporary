@@ -22,7 +22,7 @@ class NumberTest {
 
     @Test
     void testFactors() {
-        assertEquals("[1, 2, 4, 8]", Number.factors(16));
+        assertEquals("[1, 2, 4, 8]", Number.factorsresult(16));
     }
 
 }
